@@ -455,11 +455,15 @@ footer a:hover {
 		margin-top:55px;
 	}
 
+	.content {
+	display:block;
+	overflow: auto;
+	}
+
 	.quote {
-	display:none;
-}
-
-
+		width:80%;
+		border:none;
+	}
 
 
 }
