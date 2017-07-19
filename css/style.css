@@ -219,19 +219,25 @@ a:hover {
 
 .quote {
 	float:left;
-	width:46%;
-	margin-right:8%;
-	padding: 2px 0 50px 0;
+	width:43%;
+/*	margin-right:6%;
+*/	padding: 10px 30px 0px 30px;
+	border-right:1px solid #e2e2e2;
+	margin-bottom:50px;
 }
 
 .quote p{
-	font-family: 'sofia_pro_lightregular';
+	font-family: "georgia";
+	font-style:italic;
 	font-size:16px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .quote:last-child {
-	margin-right:0;
+	padding-right:0;
+	border-right:none;
+
+
 }
 
 
