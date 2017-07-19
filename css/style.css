@@ -236,14 +236,12 @@ a:hover {
 .quote:last-child {
 	padding-right:0;
 	border-right:none;
-
-
 }
 
 
 .hero {
 	text-align: center;
-	background:url("../img/from-cover-photo.jpg") center center no-repeat;
+	background:url("../img/From-Cover-Photo.jpg") center center no-repeat;
     background-size:cover;
     height:400px;
     margin-top: 40px;
