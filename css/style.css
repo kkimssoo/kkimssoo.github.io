@@ -45,6 +45,10 @@ body {
 	box-sizing: border-box;*/
 }
 
+body#story {
+	background-color: white;
+}
+
 header {
 	padding:15px 30px;
 	position: fixed;
@@ -250,6 +254,84 @@ a:hover {
 }
 
 
+/*Story page*/
+.wrapper {
+	max-width:1020px;
+	text-align: center;
+	margin:0 auto;
+}
+
+
+
+.hero-image img{
+	width:100%;
+	text-align: center;
+	padding: 120px 0 20px 0;
+	margin:0 auto;
+}
+
+.story-content {
+	max-width:740px;
+	margin: 0 auto;
+	text-align:left;
+	padding-bottom:30px;
+}
+
+.story-content p {
+    font-family: 'sofia_pro_lightregular';
+	font-size:16px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.bio {
+	display: inline-block;
+	padding:15px 0;
+}
+
+.bio img {
+	width:180px;
+	float: left;
+	padding-right:30px;
+}
+
+.bio-text {
+	width:70%;
+	float:left;
+}
+
+.bio-text h2 {
+	margin-top:-3px;
+	margin-bottom:10px;
+	font-size:19px;
+	display: inline-block;
+}
+
+.bio-text p {
+	font-size:15px;
+	line-height: 23px;
+	text-align: left;
+	margin-top:0;
+}
+
+#indent {
+	padding-left:30px; 
+	padding-right:60px;
+	border-left:3px solid #EF3B69; 
+	margin:30px;
+}
+
+.fa-linkedin-square, .fa-envelope, .fa-link {
+	padding-left:10px;
+	color:#41575f;
+	font-size:19px;
+	display: inline-block;
+}
+
+.fa:hover {
+	color:#587682;
+}
+
 
 footer {
 	padding:30px 15px; 
@@ -268,7 +350,9 @@ footer a:hover {
 	color:white;
 }
 
-
+/*#innernavlist:nth-child(1) {
+	display: none;
+}*/
 
 @media only screen and (max-width:768px){
 	
@@ -396,7 +480,7 @@ footer a:hover {
 		width:80%;
 	}
 
-	.content {
+	.content, .story-content {
 		margin: 0 20px;
 	}
 
@@ -407,6 +491,18 @@ footer a:hover {
 	#smallwidth {
 		width:55%;
 	}
+
+	#indent {
+	padding-left:30px; 
+	padding-right:0;
+	border-left:3px solid #EF3B69; 
+	margin:20px;
+	}
+
+	.bio-text {
+	width:55%;
+}
+
 
 }
 
@@ -465,8 +561,42 @@ footer a:hover {
 		border:none;
 	}
 
+	/*Story page*/
+	
+	.bio img {
+		width:80px;
+		float: left;
+		padding-right:20px;
+	}
+
+	.bio-text {
+		width:70%;
+		float:left;
+	}
+
+	.bio-text h2 {
+		margin-top:-3px;
+		margin-bottom:10px;
+		font-size:19px;
+		display: inline-block;
+	}
+
+	.bio-text p {
+		font-size:15px;
+		line-height: 23px;
+		text-align: left;
+		margin-top:0;
+	}
 
 }
 
 
 
+@media only screen and (max-width:340px){
+	.bio img {
+		display:none;
+	}
+	.bio-text {
+		width:100%;
+	}
+}
