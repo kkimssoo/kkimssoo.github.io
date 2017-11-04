@@ -103,6 +103,8 @@ nav a {
 
 a {
 	text-decoration: none;
+	color: #EF3B69;
+
 }
 
 a:hover {
@@ -159,7 +161,7 @@ a:hover {
 
 .hero-carousel {
 	width:100%;
-	margin-top:49px;
+	margin-top:100px;
 	position:relative;
 	text-align: center;
 }
@@ -167,7 +169,6 @@ a:hover {
 .hero-carousel img {
 	width:65%;
 	margin:0 auto;
-	background-color: #F2FBF9;
 }
 
 .slick-dotted.slick-slider {
@@ -187,10 +188,16 @@ a:hover {
 	z-index: 1;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-next .fa, .slick-prev .fa {
+	font-size:28px;
+	color: rgba(0,0,0,0.2);
+}
+
+/*.slick-prev:before, .slick-next:before {
 	font-size:40px;
 	color: rgba(0,0,0,0.15);
 }
+*/
 
 
 .video-background {
@@ -222,30 +229,35 @@ a:hover {
 
 
 .quote {
-	float:left;
-	width:43%;
-/*	margin-right:6%;
-*/	padding: 10px 30px 0px 30px;
-	border-right:1px solid #e2e2e2;
-	margin-bottom:50px;
+/*	float:left;*/
+	text-align: center;
+	width:85%;
+	margin: 10% auto;
+	padding: 30px;
+/*	border-right:1px solid #e2e2e2;
+*/	margin-bottom:50px;
 }
 
 .quote p{
 	font-family: "georgia";
 	font-style:italic;
-	font-size:16px;
-	line-height: 30px;
+	font-size:19px;
+	line-height: 32px;
+	color: white;
 }
 
-.quote:last-child {
+/*.quote:last-child {
 	padding-right:0;
 	border-right:none;
 }
-
+*/
 
 .hero {
 	text-align: center;
-	background:url("../img/From-Cover-Photo.jpg") center center no-repeat;
+	background:linear-gradient(
+        rgba(20,20,20, .5), 
+        rgba(20,20,20, .5)),
+		url("../img/From-Cover-Photo.jpg") center center no-repeat;
     background-size:cover;
     height:400px;
     margin-top: 40px;
@@ -262,12 +274,37 @@ a:hover {
 }
 
 
-
-.hero-image img{
+.hero-image{
+/*	background:linear-gradient(
+        rgba(20,20,20, .5), 
+        rgba(20,20,20, .5)),
+		url("../img/fromapp-story.png") center center no-repeat;
+	background-size: cover;*/
 	width:100%;
+	z-index: 10;
+    -webkit-transition: all .3s ease-out; 
+    -moz-transition: all .3s ease-out; 
+    -o-transition: all .3s ease-out; 
+    transition: all .3s ease-out; 
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+
+.hero-image:hover { 
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+ }
+
+.hero-container{
+	width:100%;
+	height:500px;
 	text-align: center;
-	padding: 120px 0 20px 0;
+	padding: 0px 0 20px 0;
 	margin:0 auto;
+	overflow: hidden;
 }
 
 .story-content {
@@ -275,6 +312,10 @@ a:hover {
 	margin: 0 auto;
 	text-align:left;
 	padding-bottom:30px;
+}
+
+.story-content h1 {
+	font-size:36px;
 }
 
 .story-content p {
@@ -332,9 +373,43 @@ a:hover {
 	color:#587682;
 }
 
+/*blog page*/
+
+.gallery {
+	margin-top:100px;
+	width:80%;
+	margin:100px auto;
+	overflow: auto;
+}
+.thumbnail { 
+	width: 24%; 
+	margin: .5%;
+	display: block;
+	float: left;
+	cursor: pointer;
+	position: relative;
+
+}
+
+.thumbnail img { 
+	width: 100%; 
+	display: block;
+}
+
+
+/*Contact Page*/
+.contact-wrapper {
+	padding-top: 120px;
+}
+
+.contact-wrapper .fa {
+	padding-right:10px;
+}
+
 
 footer {
-	padding:30px 15px; 
+	margin-top: 80px;
+	padding:40px 15px 30px 15px; 
 	background-color: #41575f;
 	color:#89949b;
 	text-align: center;
@@ -375,7 +450,9 @@ footer a:hover {
 		text-align: center;
 	}
 
-
+	.thumbnail {
+		width: 49%;
+	}
 
 	/* Hamburger menu icon */
 
@@ -543,6 +620,12 @@ footer a:hover {
 		padding-left:5px;
 		left:0;
 }
+
+	.slick-next .fa, .slick-prev .fa {
+	font-size:28px;
+	color: rgba(0,0,0,0);
+}
+
 	.slick-dots li {
 		margin:0;
 	}
@@ -588,6 +671,9 @@ footer a:hover {
 		margin-top:0;
 	}
 
+	.thumbnail {
+		width: 99%;
+	}
 }
 
 

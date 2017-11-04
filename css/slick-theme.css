@@ -1,3 +1,6 @@
+@import url('./font-awesome.css');
+
+
 @charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
@@ -12,9 +15,11 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
+    src: url('../fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
+
+
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -77,6 +82,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* To replae the default arrow
 .slick-prev
 {
     left: -25px;
@@ -111,7 +117,7 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+}*/
 
 /* Dots */
 .slick-dotted.slick-slider

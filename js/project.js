@@ -28,18 +28,24 @@ $('.hero-carousel').slick({
   speed: 500,
   fade: true,
   arrows: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
 });
 
 
-// $('<p>Text</p>').appendTo('#Content');
 
 
-    // $("<p>Hello</p>").appendTo("header");
+$(".gallery").masonry({
+  itemSelector: ".thumbnail",
+  columnWidth: ".thumbnail",
+  percentPosition: true
+});
 
 
-    // $("header").append ("<span>Hello</span>");
 
-    // $("#logo").attr("src", "" );
+$(".gallery a").simpleLightbox({
 
-	// $( "#logo" ).append( "<p>Hello</p>" );
+});
+
+
